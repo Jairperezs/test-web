@@ -3,3 +3,9 @@ extends layout
 block content
   h1=title
   p Welcome #{title}
+  form(action="/api/data" method='POST')
+    input(type="text" name='name')
+    input(type="text" name='email')
+    input(type="text" name='phone')
+    input(type="text" name='job')
+    button(type='submit') Enviar  
