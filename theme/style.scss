@@ -2,6 +2,10 @@
 
 $cssCore: false; // core EDgrid
 $cssHelpers: false; // helpers by EDgrid 
-$devMode: false; // Mode Development
+$devMode: true; // Mode Development
 
 @import 'ed-grid/ed-grid';
+
+// Import your styles
+@import "default";
+@import "home"
