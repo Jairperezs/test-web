@@ -2,10 +2,19 @@
 
 $cssCore: false; // core EDgrid
 $cssHelpers: false; // helpers by EDgrid 
-$devMode: true; // Mode Development
+$devMode: false; // Mode Development
 
 @import 'ed-grid/ed-grid';
+// Colors ===================
+$primary:    #fff;
+$secondary:  #333;
+$danger:     #f53d3d;
+$light:      #f4f4f4;
+$dark:       #030303;
+$favorite:   #666;
+$border:     #E1E8ED;
+
 
 // Import your styles
 @import "default";
-@import "home"
+@import "components/home"

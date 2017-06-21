@@ -7,12 +7,12 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-const cors = require('cors')
+var cors = require('cors')
 
 // Get routes
 var index = require('./routes/index');
-var users = require('./routes/users');
-const api = require('./routes/api')
+//var users = require('./routes/users');
+//var api = require('./routes/api')
 
 var app = express();
 
@@ -31,7 +31,7 @@ app.use(cors())
 
 // Routes
 app.use('/', index);
-app.use('/users', users);
+//app.use('/users', users);
 //app.use('/api', api); 
 
 // catch 404 and forward to error handler
